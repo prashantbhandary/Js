@@ -37,3 +37,28 @@ const myobj = {
 const myfun = function(){
     console.log("hello my fun")
 }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//stack, heap
+
+//stack (primitive)
+//heap (non primitive) reff in org value
+
+let myYt= "prashant"
+let anothername= myYt
+anothername = "beat gaming"
+
+console.log(myYt)
+console.log(anothername)
+
+let user1 ={
+    email: "user@prashant.com",
+    id: "user@123"
+}
+let user2 = user1
+
+user2.email ="prasahnt@gmail.com"
+
+console.log(user1.email) //returns the same email i.e changed
+console.log(user2.email)
+
