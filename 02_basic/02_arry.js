@@ -4,10 +4,6 @@ const country = ['nepal', 'india']
 
 // myhero.push(dc_heroes)
 // console.log(myhero)
-
-
-
-
 //use concat to merge the 2 different arry in the proper way.......
 
 // const arryn1= myhero.concat(dc_heroes)
