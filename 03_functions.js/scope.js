@@ -13,25 +13,32 @@ if (true) {
 // console.log(b);
 // console.log(c);
 
+//later on concept;;;;
+
+//dom document model
+
+
+//nested scope-- 
 
 function one(){
-    const username = "hitesh"
+    const username = "prashant"
+     
 
-    function two(){
-        const website = "youtube"
-        console.log(username);
-    }
-    // console.log(website);
+        function two(){
+            const website = "youtube"
+            console.log(username);
+        }
+        // console.log(website); //we cant access username
 
-     two()
+        two() //access username...
 
 }
 
-// one()
+// one() just funtion execute..
 
 if (true) {
-    const username = "hitesh"
-    if (username === "hitesh") {
+    const username = "prashant "
+    if (username === "prashant") {
         const website = " youtube"
         // console.log(username + website);
     }
@@ -43,7 +50,7 @@ if (true) {
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
-
+//addone...
 console.log(addone(5))
 
 function addone(num){
@@ -51,8 +58,8 @@ function addone(num){
 }
 
 
-
-addTwo(5)
+//hosting //executaion..etc etc later on
+addTwo(5)// we cant usee before decleration
 const addTwo = function(num){
     return num + 2
 }
