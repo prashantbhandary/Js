@@ -6,10 +6,15 @@
 //     return item
 // } )
 
+
+//for each doesnt return any value.. undefined
+
 // console.log(values);
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+
+//filter
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
