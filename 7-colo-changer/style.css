@@ -5,9 +5,10 @@ html {
   span {
     display: block;
   }
+
   .canvas {
     margin: 100px auto 100px;
-    width: 80%;
+    width: 90%;
     text-align: center;
   }
   
