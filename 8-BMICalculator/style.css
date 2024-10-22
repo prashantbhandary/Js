@@ -1,92 +1,86 @@
-/* Resetting default margin, padding, and box-sizing */
-* {
+/* style.css */
+body {
+  background-color: #233240;
+  font-family: Arial, sans-serif;
+  color: #d3e4e8;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Styling for the container with a centered layout */
-.container {
-  width: 100%;
-  height: 720px;
-  background-color: #070b22; /* Slightly darker background */
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 15px; /* Rounded corners for a smoother look */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+  padding: 0; 
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centering content */
-  justify-content: center;
+   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Input field styling for height and weight */
-#height,
-#weight {
-  width: 200px; /* Increased width for a more comfortable input */
-  height: 35px;
-  margin-top: 30px;
-  padding: 5px;
-  border: 2px solid #6b6767; /* Adding subtle borders */
-  border-radius: 8px;
-  font-size: 18px;
-  color: #212121;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-/* Input field hover and focus effect */
-#height:focus,
-#weight:focus {
-  border-color: #c89932; /* Highlighting input field on focus */
-}
-
-/* Styling the weight guide */
-#weight-guide {
-  margin-left: 0; /* Aligning centrally */
-  margin-top: 25px;
-  
-  color: #6d6b6b;
-  text-align: center; /* Centered text */
-}
-
-/* Results section styling */
-#results {
-  font-size: 40px; /* Slightly larger font size */
-  margin-top: 20px;
-  color: #6b6969;
+ .container {
+  background-color: #2f4254;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  width: 300px;
 }
 
-/* Button styling */
-button {
-  width: 180px;
-  height: 45px;
-  margin-top: 30px;
-  background-color: #f0a500;
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: #212121;
-  border: none; /* Removed border for a cleaner look */
-  font-size: 22px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Button hover effect */
-button:hover {
-  background-color: #212121;
-  color: #f0a500;
-  transform: scale(1.05); /* Button scales slightly when hovered */
-}
-
-/* Heading styling */
 h1 {
-  padding-top: 20px;
-  font-family: 'Poppins', sans-serif; /* Adding a modern font */
-  font-size: 36px;
-  color: #bab8b8;
-  text-align: center;
+  font-size: 24px;
   margin-bottom: 20px;
-  letter-spacing: 1px; /* Adding letter spacing for elegance */
 }
+
+form {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #e74c3c;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #1abc9c;
+}
+
+#weight-guide {
+  background-color: #2980b9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #ecf0f1;
+}
+
+#weight-guide h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+#weight-guide p {
+  margin: 5px 0;
+} 
