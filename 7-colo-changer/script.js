@@ -19,6 +19,15 @@ buttons.forEach(
                 case 'yellow': 
                     body.style.backgroundColor = e.target.id;
                     break;
+                case 'red': 
+                    body.style.backgroundColor = e.target.id;
+                    break;
+                case 'green': 
+                    body.style.backgroundColor = e.target.id;
+                    break;
+                case 'brown': 
+                    body.style.backgroundColor = e.target.id;
+                    break;
                 default:
                     break;
             }
