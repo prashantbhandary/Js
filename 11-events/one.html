@@ -39,26 +39,25 @@
             //target, toElement , srcElement , currentTarget
             //clientX, clientY , screenX, screenY
             //altkey, ctrlkey, shiftkey, keyCode 
+
             // document.getElementById('google').addEventListener('click',
             //     (e)=>{
-            //         e.preventDefault()
-            //         e.stopPropagation()
+            //         e.preventDefault() //prevent from clicking.
+            //         e.stopPropagation()  //stop bubble popping..
             //         console.log("google clicked")
-                // },false
+                // },false       //generaly it is false.. in default.. if we use true it goes from bottom to top
             // )
 
-            document.querySelector('#images').addEventListener
-            ('click',(e)=>{
-                console.log(e.target.tagName);
-                if(e.target.tagName === "IMG")
-
+            document.querySelector('#images').addEventListener   //selecting ul .. targeting ul
+            ('click',(e)=>{                                 
+                console.log(e.target.tagName);   //target..methondss form which id... it give we can see in console log
+                if(e.target.tagName === "IMG")   //we have to remove onyy imgg not the list item
+                                                // so we needd to check wheather the click is on the img or in the li
                 {
-                    let remove = e.target.parentNode
-                    remove.remove()
+                    let remove = e.target.parentNode   //  we need to remove li not ul soo
+                    remove.remove();            
                 }
-                // remove.parentNode.removeChild(remove)
+                // remove.parentNode.removeChild(remove)  
             })
-
-
     </script>
 </html>
